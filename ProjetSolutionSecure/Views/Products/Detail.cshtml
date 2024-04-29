@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Détails du produit";
+}
+
+<h2>Détails du produit</h2>
+<h3>@Model.Title</h3>
+<p>Description : @Model.Description</p>
+<p>Fabricant : @Model.Manufacturer</p>
+<p>Prix de vente : @Model.Price</p>
+@if (!string.IsNullOrEmpty(Model.ExtraInfo))
+{
+    <p>Informations complémentaires : @Model.ExtraInfo</p>
+}
